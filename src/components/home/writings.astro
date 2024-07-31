@@ -1,88 +1,37 @@
 ---
 import Button from "../button.astro";
 import PostsLoop from "../posts-loop.astro";
-
-const feed = "https://feed.miantiao.me/";
 ---
 
 <section class="max-w-5xl mx-auto px-7 lg:px-0 mt-16 md:mt-24 lg:mt-32">
-  <h2
-    class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-neutral-900 dark:text-white mb-4 animate-glitch"
-  >
-    <span class="glitch-text" data-text="Arcane Scrolls">Arcane Scrolls</span>
-  </h2>
-  <p class="mb-8 text-lg text-neutral-600 dark:text-neutral-400 font-medium animate-float">
-    Beyond coding, I scribe digital incantations about life and technology. Behold my recent enchantments.
-  </p>
+  <div class="flex flex-col md:flex-row items-start justify-between">
+    <div class="md:w-1/2 pr-8">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-neutral-900 dark:text-white mb-4 animate-glitch"
+      >
+        <span class="glitch-text" data-text="Arcane Scrolls">Writings</span>
+      </h2>
+      <p class="mb-8 text-lg text-neutral-600 dark:text-neutral-400 font-medium animate-float">
+        Here I'm writing about stuff that I'm currently working on.
+      </p>
 
-  <div class="w-full mx-auto my-10 xl:px-0">
-    <div
-      class="flex flex-col items-start justify-start md:flex-row md:space-x-10"
-    >
-      <div class="w-full md:w-2/3 space-y-10">
-        <PostsLoop count="3" />
-
-        <div class="flex items-center justify-center w-full py-5">
-          <Button text="Unveil All Writings" link="/posts" class="animate-bounce-rotate" />
+      <div class="w-full mx-auto my-10 xl:px-0">
+        <div class="space-y-10">
+          <PostsLoop count="3" />
+          
+          <div class="flex items-center justify-center w-full py-5">
+            <Button text="Unveil All Writings" link="/posts" class="animate-bounce-rotate" />
+          </div>
         </div>
       </div>
-      <div class="w-full mt-10 md:w-1/3 md:mt-0">
-        <form
-          method="get"
-          action={feed}
-          class="p-6 bg-gradient-to-r from-indigo-100 to-purple-200 dark:from-indigo-900 dark:to-purple-800 rounded-xl shadow-2xl animate-pulse-glow"
-        >
-          <div class="relative flex items-center space-x-3 mb-4">
-            <svg
-              class="flex-none w-8 h-8 text-indigo-600 dark:text-indigo-300 animate-spin-slow"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
-              />
-            </svg>
-            <h2
-              class="flex text-xl font-bold text-indigo-800 dark:text-indigo-200"
-            >
-              Subscribe to My Grimoire
-            </h2>
-          </div>
-          <p class="mt-2 text-sm text-indigo-700 dark:text-indigo-300">
-            Receive mystic updates via 
-              class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
-              href={`https://feedly.com/i/subscription/feed%2F${encodeURIComponent(feed)}`}
-              >Feedly</a
-            >, 
-              class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300"
-              href={`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`}
-              >Inoreader</a
-            > or <a class="font-bold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-300" href={feed}>RSS</a>.
-          </p>
-          <div class="flex flex-col items-center w-full mt-6 space-y-4">
-            <input
-              type="url"
-              readonly
-              placeholder="Magical Feed URL"
-              aria-label="Feed URL"
-              required=""
-              value={feed}
-              class="w-full h-12 px-4 text-sm border-2 border-indigo-300 dark:border-indigo-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-indigo-800 dark:placeholder-indigo-300 dark:text-indigo-100"
-            />
-            <button
-              type="submit"
-              class="block w-full px-6 py-3 text-sm font-semibold text-center duration-300 ease-out border-2 rounded-lg bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700 hover:border-indigo-700 dark:bg-indigo-500 dark:border-indigo-500 dark:hover:bg-indigo-600 dark:hover:border-indigo-600 transform hover:scale-105 transition-all"
-            >
-              Inscribe Your Essence
-            </button>
-          </div>
-        </form>
-      </div>
+    </div>
+    
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img 
+        src="https://ucarecdn.com/4d3400e0-e1f7-4bc2-a42c-86648847ffe0/-/preview/1000x750/" 
+        alt="Arcane Scrolls Image" 
+        class="w-full h-auto rounded-lg shadow-lg animate-pulse-glow"
+      />
     </div>
   </div>
 </section>

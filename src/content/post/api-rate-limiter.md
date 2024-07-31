@@ -3,6 +3,7 @@ layout: ../../layouts/post.astro
 title: "Building a Distributed API Rate Limiter"
 description: "An in-depth look at building a high-performance rate limiter using Golang, Redis, Docker, Nginx, and RabbitMQ."
 dateFormatted: "2024-07-31"
+image: https://ucarecdn.com/5671caa5-5927-4c26-8b62-79b14eff72ef/-/preview/1000x536/
 ---
 
 So in today's post I'll share my work on Distributed Rate Limiter which is able to handle 10M+ requests per second on my MBP M1.
