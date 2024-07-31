@@ -4,5 +4,11 @@
 		"description": "Create deepfakes in seconds.",
 		"image": "https://ucarecdn.com/2e35f76a-09e9-4ed0-b907-29a8b11a4374/-/preview/1000x625/",
 		"url": "https://beta.cupidai.tech"
+	},
+	{
+		"name": "API Rate Limiter",
+		"description": "High-performance rate limiter using Golang, Redis, Docker, Nginx, and RabbitMQ.",
+		"image": "https://ucarecdn.com/5671caa5-5927-4c26-8b62-79b14eff72ef/-/preview/1000x536/",
+		"url": "https://github.com/jcob-sikorski/api-rate-limiter"
 	}
 ]
