@@ -83,81 +83,13 @@ The system's ability to update rate limiting rules in real-time is a key feature
 The rule-based configuration, inspired by Lyft, looks like this:
 
 ```yaml
-version: '3'
-services:
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: 'rabbitmq'
-    ports:
-        - 15672:15672
-    volumes:
-        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-    networks:
-        - api-rate-limiter
-
-  express-api:
-    depends_on:
-      - rabbitmq
-    build:
-      context: express-api
-      dockerfile: Dockerfile
-    networks:
-      - api-rate-limiter
-
-  redis:
-    container_name: 'redis'
-    image: redis:7.0.15-alpine
-    volumes:
-      - redis:/data
-    networks:
-      - api-rate-limiter
-
-  worker:
-    container_name: 'worker'
-    depends_on:
-      - redis
-    build:
-      context: worker
-      dockerfile: Dockerfile
-    volumes:
-      - go_rate_limiter_config:/config
-    networks:
-      - api-rate-limiter
-
-
-  go-rate-limiter:
-    container_name: 'go-rate-limiter'
-    depends_on:
-      - redis
-      - rabbitmq
-      - worker
-    build:
-      context: go-rate-limiter
-      dockerfile: Dockerfile
-    networks:
-      - api-rate-limiter
-
-  nginx-config:
-    container_name: 'nginx-config'
-    depends_on:
-      - express-api
-      - go-rate-limiter
-    build:
-      context: nginx-config
-      dockerfile: Dockerfile
-    networks:
-      - api-rate-limiter
-    ports:
-      - "80:80"
-
-networks:
-  api-rate-limiter:
-
-volumes:
-  redis:
-  go_rate_limiter_config:
-    external: true
+domain: auth
+descriptors:
+  - key: auth_type
+    value: login
+    rate_limit:
+      unit: minute
+      requests_per_unit: 5
 ```
 
 Currently, the rate limiter only considers unit and requests_per_unit during initialization, with plans to incorporate remaining rules soon.
