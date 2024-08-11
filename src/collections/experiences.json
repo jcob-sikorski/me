@@ -3,14 +3,14 @@
 		"dates": "March 2024 · July 2024",
 		"role": "Lead Software Engineer / Co-founder",
 		"company": "CupidAI",
-		"description": "Architected and developed the backend infrastructure for a premium deepfake generation service. Responsibilities included designing scalable systems, ensuring high performance, and maintaining overall platform reliability.",
+		"description": "At beta.cupidai.tech (15k MRR), I developed the backend infrastructure for a deepfake generation service. I designed scalable systems, ensuring high performance, and maintaining the overall reliability of our platform.",
 		"logo": "https://ucarecdn.com/1d3b5334-a89d-454b-ac62-ffddf4326c14/-/preview/1000x1000/"
 	},
 	{
 		"dates": "June 2023 · September 2023",
 		"role": "Software Engineer",
 		"company": "LiVE",
-		"description": "Developed a location-based, real-time messaging app. Responsibilities included implementing Telegram-like chat features, full-text search across location databases, tracking user actions within the app, and integrating both Apple and Google Maps with advanced clustering techniques.",
+		"description": "I developed a location-based, real-time messaging app. My responsibilities included implementing Telegram-like chat features, enabling full-text search across location databases, tracking user actions within the app, and integrating both Apple and Google Maps with some clustering techniques.",
 		"logo": "https://ucarecdn.com/8fd60eae-c05b-4c1c-9da7-7898c1c09168/-/preview/344x178/"
 	}
 ]
