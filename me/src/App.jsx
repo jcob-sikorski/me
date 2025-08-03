@@ -2,31 +2,90 @@ import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "CupidAI",
-    role: "Backend Engineer",
-    summary: "Built scalable backend infrastructure for a leading AI-powered deepfake video generation platform.",
-    stack: ["Golang", "FastAPI", "Docker", "GPU orchestration", "AWS", "PostgreSQL"],
+    title: "SEO On-Page Engine",
+    role: "Lead Software Engineer",
+    summary: "Built a modular system for automated SEO opportunity discovery and content generation, designed for a $6M ARR agency.",
+    stack: ["Python", "FastAPI", "MongoDB", "Docker", "GPT/OpenAI", "DataForSEO", "Google Search Console API"],
     contributions: [
-      "Designed and optimized RESTful APIs for real-time video rendering",
-      "Implemented GPU job orchestration and task queueing",
-      "Improved backend performance, cutting render time by 40%",
+      "Engineered automated pipelines for keyword mining and semantic clustering",
+      "Developed a GPT-powered brief generator to automate content strategy",
+      "Implemented decay detection and competitor gap analysis for prioritized opportunities",
+      "Created a robust API rate limiter to manage requests to third-party services"
     ],
-    impact: "Enabled 10K+ video generations/month with 99.9% uptime",
-    link: "#"
+    impact: "Used by a $6M ARR SEO agency to generate content briefs and strategies at scale",
+    links: [
+      { url: "https://github.com/jcob-sikorski/growth-shop-robo-seo-on-page-main", text: "GitHub Repo" }
+    ]
   },
   {
-    title: "TaskLeap",
-    role: "Founder / Automation Engineer", 
-    summary: "Engineered automation systems for agencies and enterprises, improving revenue and scalability.",
-    stack: ["Golang", "Python", "Docker", "AWS Lambda", "SQL/NoSQL"],
+    title: "CupidAI",
+    role: "Software Engineer",
+    summary: "Architected and created the backend infrastructure for a market-leading AI deepfake video platform, attracting over 300 paying agencies.",
+    stack: ["Next.js", "Prisma", "Tailwind", "tRPC", "RabbitMQ", "Docker", "Shell", "TypeScript", "Python", "Bark", "ComfyUI", "Face Fusion", "Ngrok", "FastAPI", "MongoDB"],
     contributions: [
-      "Built cold outreach engines generating $12K+ MRR",
-      "Automated legal doc classification saving 400+ hours/quarter",
-      "Tripled agency client capacity through SEO process automation",
+      "Designed and optimized RESTful APIs for real-time video rendering",
+      "Implemented a GPU job orchestration system to manage resource-intensive tasks",
+      "Improved backend performance, cutting render time by 40%",
+      "Engineered a scalable system that handled over 10K video generations per month"
     ],
-    impact: "Used by 8+ clients with 6- and 7-figure ARR",
-    link: "#"
+    impact: "Attracted 300+ paying modeling agencies and enabled 10K+ video generations/month with 99.9% uptime",
+    links: [ // Added 5 placeholder links for CupidAI
+      { url: "https://github.com/jcob-sikorski/cupidai-main", text: "Client Facing Code" },
+      { url: "https://github.com/jcob-sikorski/cupid-gpu", text: "GPU Orchestrator" },
+      { url: "https://github.com/jcob-sikorski/cupidai-frontend", text: "Frontend V1" },
+      { url: "https://github.com/jcob-sikorski/cupidai-landing-page", text: "Landing Page" },
+      { url: "https://github.com/jcob-sikorski/runpod_server", text: "GPU Orchestrator V1" }
+    ]
   },
+  {
+    title: "LiVE",
+    role: "Software Engineer",
+    summary: "Developed the core backend features for a location-based, real-time social messaging platform.",
+    stack: ["FastAPI", "MongoDB", "RabbitMQ", "Docker", "AWS", "Google Maps API"],
+    contributions: [
+      "Implemented a real-time, Telegram-like messaging system",
+      "Engineered a full-text search engine across locations' databases",
+      "Integrated Google and Apple Maps with cluster-based segmentation"
+    ],
+    impact: "Enabled core social functionality and user engagement for the platform",
+    links: [
+      { url: "https://github.com/EmenikeIsGreat/Live-backend", text: "App's Backend" },
+      { url: "https://github.com/jcob-sikorski/live", text: "App's Frontend" }
+    ]
+  },
+  {
+    title: "API Rate Limiter",
+    role: "Side Project",
+    summary: "A server-side API rate limiter for distributed environments. It evaluates several algorithms and uses a configurable system to enforce throttle rules, ensuring low latency and high fault tolerance.",
+    stack: ["Express", "Go", "Nginx", "Docker", "Redis"],
+    contributions: [
+      "Implemented multiple rate-limiting algorithms, including Fixed Window Counter and Sliding Window Log",
+      "Designed a distributed system using Redis to synchronize limits across multiple servers",
+      "Used Lua scripts to ensure atomic operations and prevent race conditions in a concurrent environment",
+      "Configured cron jobs and workers to update rate-limiting rules in the cache for dynamic control"
+    ],
+    impact: "Created a scalable and fault-tolerant system to protect APIs from excessive requests.",
+    links: [
+      {
+        "url": "https://github.com/jcob-sikorski/api-rate-limiter",
+        "text": "GitHub Repo"
+      }
+    ]
+  },
+  {
+    title: "Nand2Tetris: Jack Compiler",
+    role: "Side Project",
+    summary: "Full implementation of a Jack-to-VM compiler as part of the Nand2Tetris course, demonstrating a deep understanding of computer architecture and language design.",
+    stack: ["Java"],
+    contributions: [
+      "Developed a syntax analyzer (tokenizer and parser) to create an abstract syntax tree",
+      "Implemented a code generation stage to translate the syntax tree into VM code"
+    ],
+    impact: "Successfully translated high-level Jack code into a working virtual machine language",
+    links: [
+      { url: "https://github.com/jcob-sikorski/JackCompilator", text: "GitHub Repo" }
+    ]
+  }
 ];
 
 export default function App() {
@@ -40,7 +99,7 @@ export default function App() {
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Backend Engineer & Automation Architect specializing in scalable infrastructure and process optimization
+            Backend Software Engineer specializing in scalable infrastructure and process optimization.
           </p>
           
           <div className="flex gap-8">
@@ -52,7 +111,7 @@ export default function App() {
               Email
             </a>
             <a 
-              href="https://github.com/jakub-siekiera"
+              href="https://github.com/jcob-sikorski"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-700 font-medium"
@@ -61,7 +120,7 @@ export default function App() {
               GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/jakub-siekiera"
+              href="https://www.linkedin.com/in/jcob-sikorski/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-700 font-medium"
@@ -130,16 +189,22 @@ export default function App() {
                   </p>
                 </div>
                 
-                {project.link && (
-                  <a
-                    href={project.link}
-                    className="inline-flex items-center gap-2 text-black font-medium"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
+                {/* Conditional rendering for multiple links */}
+                {project.links && project.links.length > 0 && (
+                  <div className="flex flex-wrap gap-x-6 gap-y-2">
+                    {project.links.map((link, i) => (
+                      <a
+                        key={i}
+                        href={link.url}
+                        className="inline-flex items-center gap-2 text-black font-medium"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.text}
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    ))}
+                  </div>
                 )}
               </article>
             ))}
@@ -151,13 +216,21 @@ export default function App() {
           <h2 className="text-3xl font-light mb-12 text-black">Technical Skills</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-medium text-black mb-4">Languages & Frameworks</h3>
+<div>
+              <h3 className="text-lg font-medium text-black mb-4">Programming Languages & Frameworks</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• Golang (Expert)</li>
                 <li>• Python (Advanced)</li>
                 <li>• FastAPI (Advanced)</li>
-                <li>• RESTful API Design</li>
+                <li>• NextJS (Advanced)</li>
+                <li>• C++ (Intermediate)</li>
+                <li>• Javascript (Intermediate)</li>
+                <li>• Java (Intermediate)</li>
+                <li>• Express</li>
+                <li>• Go (Advanced)</li>
+                <li>• TypeScript (Advanced)</li>
+                <li>• Prisma (Advanced)</li>
+                <li>• tRPC (Advanced)</li>
               </ul>
             </div>
             
@@ -166,8 +239,17 @@ export default function App() {
               <ul className="space-y-2 text-gray-700">
                 <li>• Docker & Containerization</li>
                 <li>• AWS Cloud Services</li>
-                <li>• PostgreSQL & Database Design</li>
+                <li>• Kubernetes</li>
+                <li>• PostgreSQL & MongoDB</li>
+                <li>• RabbitMQ</li>
                 <li>• GPU Orchestration</li>
+                <li>• Git & Version Control</li>
+                <li>• Linux/UNIX</li>
+                <li>• Nginx</li>
+                <li>• Redis</li>
+                <li>• Shell</li>
+                <li>• Tailwind</li>
+                <li>• GPT/OpenAI</li>
               </ul>
             </div>
           </div>
