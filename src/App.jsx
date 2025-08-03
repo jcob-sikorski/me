@@ -129,7 +129,7 @@ export default function App() {
                 LinkedIn
               </a>
               <a
-                href="https://drive.google.com/file/d/1XHaxaC9kLz6lZ428z8_b3Sy0LJuKth54/view?usp=sharing"
+                href="https://drive.google.com/file/d/1BuiZwUoxVlJoe2seDRDecGE14fI5Bc8O/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-700 font-medium"
