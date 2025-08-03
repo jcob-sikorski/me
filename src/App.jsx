@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, ExternalLink, FileText } from "lucide-react";
 
 const projects = [
   {
@@ -102,33 +102,42 @@ export default function App() {
             Backend Software Engineer specializing in scalable infrastructure and process optimization.
           </p>
           
-          <div className="flex gap-8">
-            <a 
-              href="mailto:jm.siekiera@gmail.com"
-              className="flex items-center gap-2 text-gray-700 font-medium"
-            >
-              <Mail className="w-4 h-4" />
-              Email
-            </a>
-            <a 
-              href="https://github.com/jcob-sikorski"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-700 font-medium"
-            >
-              <Github className="w-4 h-4" />
-              GitHub
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/jcob-sikorski/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-gray-700 font-medium"
-            >
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
-            </a>
-          </div>
+            <div className="flex gap-8">
+              <a
+                href="mailto:jm.siekiera@gmail.com"
+                className="flex items-center gap-2 text-gray-700 font-medium"
+              >
+                <Mail className="w-4 h-4" />
+                Email
+              </a>
+              <a
+                href="https://github.com/jcob-sikorski"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-700 font-medium"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jcob-sikorski/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-700 font-medium"
+              >
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1XHaxaC9kLz6lZ428z8_b3Sy0LJuKth54/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-gray-700 font-medium"
+              >
+                <FileText className="w-4 h-4" />
+                CV
+              </a>
+            </div>
         </header>
 
         {/* Projects */}
