@@ -99,45 +99,45 @@ export default function App() {
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Backend Software Engineer specializing in scalable infrastructure and process optimization.
+            Junior Backend Software Engineer specializing in Golang, CI/CD, automation, and AI-driven solutions, with a passion for consulting.
           </p>
           
-            <div className="flex gap-8">
-              <a
-                href="mailto:jm.siekiera@gmail.com"
-                className="flex items-center gap-2 text-gray-700 font-medium"
-              >
-                <Mail className="w-4 h-4" />
-                Email
-              </a>
-              <a
-                href="https://github.com/jcob-sikorski"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 font-medium"
-              >
-                <Github className="w-4 h-4" />
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jcob-sikorski/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 font-medium"
-              >
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1BuiZwUoxVlJoe2seDRDecGE14fI5Bc8O/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 font-medium"
-              >
-                <FileText className="w-4 h-4" />
-                CV
-              </a>
-            </div>
+          <div className="flex gap-8">
+            <a
+              href="mailto:jm.siekiera@gmail.com"
+              className="flex items-center gap-2 text-gray-700 font-medium"
+            >
+              <Mail className="w-4 h-4" />
+              Email
+            </a>
+            <a
+              href="https://github.com/jcob-sikorski"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-700 font-medium"
+            >
+              <Github className="w-4 h-4" />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jcob-sikorski/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-700 font-medium"
+            >
+              <Linkedin className="w-4 h-4" />
+              LinkedIn
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1BuiZwUoxVlJoe2seDRDecGE14fI5Bc8O/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-700 font-medium"
+            >
+              <FileText className="w-4 h-4" />
+              CV
+            </a>
+          </div>
         </header>
 
         {/* Projects */}
@@ -198,7 +198,6 @@ export default function App() {
                   </p>
                 </div>
                 
-                {/* Conditional rendering for multiple links */}
                 {project.links && project.links.length > 0 && (
                   <div className="flex flex-wrap gap-x-6 gap-y-2">
                     {project.links.map((link, i) => (
@@ -225,40 +224,36 @@ export default function App() {
           <h2 className="text-3xl font-light mb-12 text-black">Technical Skills</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div>
+            <div>
               <h3 className="text-lg font-medium text-black mb-4">Programming Languages & Frameworks</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Golang (Expert)</li>
-                <li>• Python (Advanced)</li>
-                <li>• FastAPI (Advanced)</li>
-                <li>• NextJS (Advanced)</li>
-                <li>• C++ (Intermediate)</li>
-                <li>• Javascript (Intermediate)</li>
-                <li>• Java (Intermediate)</li>
+                <li>• Golang</li>
+                <li>• Python</li>
+                <li>• FastAPI</li>
+                <li>• Java</li>
+                <li>• TypeScript</li>
                 <li>• Express</li>
-                <li>• Go (Advanced)</li>
-                <li>• TypeScript (Advanced)</li>
-                <li>• Prisma (Advanced)</li>
-                <li>• tRPC (Advanced)</li>
+                <li>• Next.js</li>
+                <li>• tRPC</li>
+                <li>• Prisma</li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-black mb-4">Infrastructure & Tools</h3>
+              <h3 className="text-lg font-medium text-black mb-4">Tools & Technologies</h3>
               <ul className="space-y-2 text-gray-700">
+                <li>• CI/CD (GitHub Actions, Jenkins)</li>
                 <li>• Docker & Containerization</li>
-                <li>• AWS Cloud Services</li>
-                <li>• Kubernetes</li>
+
                 <li>• PostgreSQL & MongoDB</li>
                 <li>• RabbitMQ</li>
                 <li>• GPU Orchestration</li>
-                <li>• Git & Version Control</li>
+                <li>• Redis</li>
                 <li>• Linux/UNIX</li>
                 <li>• Nginx</li>
-                <li>• Redis</li>
+                <li>• Git & Version Control</li>
                 <li>• Shell</li>
-                <li>• Tailwind</li>
-                <li>• GPT/OpenAI</li>
+                <li>• AI Tools (e.g., GPT/OpenAI, Bark, ComfyUI, Tensorflow)</li>
               </ul>
             </div>
           </div>
@@ -267,7 +262,7 @@ export default function App() {
         {/* Footer */}
         <footer className="pt-12 border-t border-gray-200">
           <p className="text-gray-600 text-center">
-            Available for consulting and full-time opportunities
+            Available for consulting and backend development roles, specializing in Golang, CI/CD, automation, and AI. Currently pursuing AWS Certified Cloud Practitioner.
           </p>
         </footer>
       </div>
