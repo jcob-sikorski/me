@@ -99,7 +99,7 @@ export default function App() {
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Junior Backend Software Engineer specializing in Golang, CI/CD, automation, and AI-driven solutions, with a passion for consulting.
+            Backend Software Engineer specializing in Golang, CI/CD, automation, and AI-driven solutions, with a passion for consulting.
           </p>
           
           <div className="flex gap-8">
