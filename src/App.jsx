@@ -4,7 +4,7 @@ const projects = [
   {
     title: "SEO On-Page Engine",
     role: "Lead Software Engineer",
-    summary: "Built a modular system for automated SEO opportunity discovery and content generation, designed for a $6M ARR agency.",
+    summary: "Built an automated SEO tool using Python, FastAPI, Docker, RESTful APIs and MongoDB. It uses keyword data, semantic clustering, and GPT-powered AI to proactively identify on-page content opportunities, generate prioritized content briefs, and improve search engine performance.",
     stack: ["Python", "FastAPI", "MongoDB", "Docker", "GPT/OpenAI", "DataForSEO", "Google Search Console API"],
     contributions: [
       "Engineered automated pipelines for keyword mining and semantic clustering",
@@ -12,7 +12,7 @@ const projects = [
       "Implemented decay detection and competitor gap analysis for prioritized opportunities",
       "Created a robust API rate limiter to manage requests to third-party services"
     ],
-    impact: "Used by a $6M ARR SEO agency to generate content briefs and strategies at scale",
+    impact: "Used by a $12M ARR SEO agency to generate content briefs and strategies at scale",
     links: [
       { url: "https://github.com/jcob-sikorski/growth-shop-robo-seo-on-page-main", text: "GitHub Repo" }
     ]
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "CupidAI",
     role: "Software Engineer",
-    summary: "Architected and created the backend infrastructure for a market-leading AI deepfake video platform, attracting over 300 paying agencies.",
+    summary: "Developed the backend for a market-leading AI deepfake video platform (300+ paying agencies) using Python, FastAPI, MongoDB, and GPU orchestration with Docker & RabbitMQ. Integrated Bark, ComfyUI, and Face Fusion to cut render times by 40%, enabling 10K+ monthly video generations with 99.9% uptime.",
     stack: ["Next.js", "Prisma", "Tailwind", "tRPC", "RabbitMQ", "Docker", "Shell", "TypeScript", "Python", "Bark", "ComfyUI", "Face Fusion", "Ngrok", "FastAPI", "MongoDB"],
     contributions: [
       "Designed and optimized RESTful APIs for real-time video rendering",
@@ -99,7 +99,7 @@ export default function App() {
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Backend Software Engineer specializing in Golang, CI/CD, automation, and AI-driven solutions, with a passion for consulting.
+            Backend Software Engineer | Golang, Python, CI/CD, AI-Driven Automation & Consulting
           </p>
           
           <div className="flex gap-8">
@@ -262,7 +262,7 @@ export default function App() {
         {/* Footer */}
         <footer className="pt-12 border-t border-gray-200">
           <p className="text-gray-600 text-center">
-            Available for consulting and backend development roles, specializing in Golang, CI/CD, automation, and AI. Currently pursuing AWS Certified Cloud Practitioner.
+            Experienced in Backend and AI automation | In the process of specializing in Golang, CI/CD, and cloud | Available for consulting and backend roles | AWS CCP candidate
           </p>
         </footer>
       </div>
