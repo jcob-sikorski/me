@@ -100,7 +100,7 @@ export default function App() {
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
-            Backend Software Engineer | Golang, Python, CI/CD, AI-Driven Automation & Consulting
+            Java Spring Boot SWE | Cloud, AI, Automation | Consulting
           </p>
           
           <div className="flex gap-8">
@@ -229,35 +229,34 @@ export default function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-medium text-black mb-4">Programming Languages & Frameworks</h3>
+              <h3 className="text-lg font-medium text-black mb-4">
+                Backend & Frameworks
+              </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Golang</li>
-                <li>• Python</li>
-                <li>• FastAPI</li>
                 <li>• Java</li>
-                <li>• TypeScript</li>
-                <li>• Express</li>
-                <li>• Next.js</li>
-                <li>• tRPC</li>
-                <li>• Prisma</li>
+                <li>• Spring Boot (Spring MVC, Spring Data JPA)</li>
+                <li>• RESTful API Design</li>
+                <li>• SQL & Data Modeling</li>
+                <li>• Event-Driven Architecture</li>
+                <li>• Backend System Design</li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-black mb-4">Tools & Technologies</h3>
+              <h3 className="text-lg font-medium text-black mb-4">
+                Cloud, DevOps & Automation
+              </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• CI/CD (GitHub Actions, Jenkins)</li>
+                <li>• AWS (Core Services)</li>
                 <li>• Docker & Containerization</li>
-
+                <li>• CI/CD (GitHub Actions, Jenkins)</li>
                 <li>• PostgreSQL & MongoDB</li>
-                <li>• RabbitMQ</li>
-                <li>• GPU Orchestration</li>
-                <li>• Redis</li>
-                <li>• Linux/UNIX</li>
+                <li>• Redis & Caching</li>
+                <li>• RabbitMQ / Kafka</li>
                 <li>• Nginx</li>
                 <li>• Git & Version Control</li>
-                <li>• Shell</li>
-                <li>• AI Tools (e.g., GPT/OpenAI, Bark, ComfyUI, Tensorflow)</li>
+                <li>• Linux / UNIX</li>
+                <li>• AI & Automation (LLMs, API Integrations)</li>
               </ul>
             </div>
           </div>
@@ -266,7 +265,7 @@ export default function App() {
         {/* Footer */}
         <footer className="pt-12 border-t border-gray-200">
           <p className="text-gray-600 text-center">
-            Experienced in Backend and AI automation | In the process of specializing in Golang, CI/CD, and cloud | Available for consulting and backend roles | AWS CCP candidate
+            Backend Software Engineer specializing in Java & Spring Boot | Cloud-native systems, AI-driven automation & CI/CD | Open to backend and consulting roles | AWS Certified Cloud Practitioner candidate
           </p>
         </footer>
       </div>
