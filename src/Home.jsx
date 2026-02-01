@@ -133,7 +133,7 @@ export default function App() {
               <BookOpen className="w-4 h-4" /> Writing
             </Link>
             <a
-              href="https://drive.google.com/file/d/1BuiZwUoxVlJoe2seDRDecGE14fI5Bc8O/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tAkPMLi4nzbLmkAf8LFDTkEN2evlP8mQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-700 font-medium"
