@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Github, Linkedin, ExternalLink, FileText, BookOpen } from "lucide-react";
+import { Mail, Github, Linkedin, ExternalLink, FileText, BookOpen, Code } from "lucide-react";
 
 const projects = [
   {
@@ -128,6 +128,15 @@ export default function App() {
             >
               <Linkedin className="w-4 h-4" />
               LinkedIn
+            </a>
+            <a
+              href="https://leetcode.com/u/jcob_sikorski/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-gray-700 font-medium"
+            >
+              <Code className="w-4 h-4" />
+              LeetCode
             </a>
             <Link to="/writing" className="flex items-center gap-2 text-gray-700 font-medium hover:text-black transition-colors">
               <BookOpen className="w-4 h-4" /> Writing

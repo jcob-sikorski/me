@@ -115,3 +115,4 @@ If you want to discuss backend engineering, consulting, or collaboration:
 * **Email:** [jm.siekiera@gmail.com](mailto:jm.siekiera@gmail.com)
 * **LinkedIn:** [https://www.linkedin.com/in/jcob-sikorski](https://www.linkedin.com/in/jcob-sikorski)
 * **GitHub:** [https://github.com/jcob-sikorski](https://github.com/jcob-sikorski)
+* **LeetCode:** [https://leetcode.com/u/jcob_sikorski/](https://leetcode.com/u/jcob_sikorski/)
