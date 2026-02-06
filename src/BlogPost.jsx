@@ -1,8 +1,10 @@
 // src/BlogPost.jsx
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import { blogPosts } from "./blogData";
 import { useEffect } from "react";
+import Markdown from 'react-markdown'; // 1. Import the markdown renderer
+import rehypeHighlight from 'rehype-highlight';
+import { blogPosts } from "./blogData";
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -31,7 +33,8 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-12 border-b border-gray-100 pb-8">
           <div className="flex gap-2 mb-4">
-            {post.tags.map(tag => (
+            {/* Added optional chaining (?.) just in case a markdown file is missing tags */}
+            {post.tags?.map(tag => (
               <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium uppercase tracking-wider">
                 {tag}
               </span>
@@ -50,9 +53,12 @@ export default function BlogPost() {
         </header>
 
         {/* Content */}
-        <div className="prose prose-lg prose-gray max-w-none font-light text-gray-800 leading-loose">
-          {post.content}
-        </div>
+        {/* 2. The prose class must wrap the Markdown component */}
+        <article className="prose prose-lg prose-gray max-w-none font-light text-gray-800 leading-loose">
+          <Markdown rehypePlugins={[rehypeHighlight]}>
+            {post.content}
+          </Markdown>
+        </article>
 
       </div>
     </div>
