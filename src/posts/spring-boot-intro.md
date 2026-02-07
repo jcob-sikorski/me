@@ -1,6 +1,6 @@
 ---
 slug: "from-zero-to-hello-world-spring-boot"
-title: "From Zero to Hello World: A Spring Boot Deep Dive"
+title: "From Zero to Hero: A Brief Introduction to Spring Boot"
 date: "February 7, 2026"
 readTime: "30 min read"
 tags: ["Java 25", "Spring Boot 4", "Backend", "Maven", "Developer Productivity"]
