@@ -1,8 +1,7 @@
-// src/BlogPost.jsx
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { useEffect } from "react";
-import Markdown from 'react-markdown'; // 1. Import the markdown renderer
+import Markdown from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import { blogPosts } from "./blogData";
 
@@ -10,7 +9,6 @@ export default function BlogPost() {
   const { slug } = useParams();
   const post = blogPosts.find((p) => p.slug === slug);
 
-  // Scroll to top on load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,7 +19,12 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <div className="max-w-3xl mx-auto px-8 py-16">
+      {/* CHANGED:
+         1. Removed 'w-full' (block elements fill width by default).
+         2. Added 'mx-6' (small margin on mobile).
+         3. Added 'md:mx-20' (larger margin on desktop) so it's not glued to the edge.
+      */}
+      <div className="mx-6 md:mx-20 py-16">
         
         {/* Navigation */}
         <div className="mb-12">
@@ -33,7 +36,6 @@ export default function BlogPost() {
         {/* Header */}
         <header className="mb-12 border-b border-gray-100 pb-8">
           <div className="flex gap-2 mb-4">
-            {/* Added optional chaining (?.) just in case a markdown file is missing tags */}
             {post.tags?.map(tag => (
               <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium uppercase tracking-wider">
                 {tag}
@@ -52,8 +54,7 @@ export default function BlogPost() {
           </div>
         </header>
 
-        {/* Content */}
-        {/* 2. The prose class must wrap the Markdown component */}
+        {/* Content - 'max-w-none' ensures the text fills the space defined by the margins above */}
         <article className="prose prose-lg prose-gray max-w-none font-light text-gray-800 leading-loose">
           <Markdown rehypePlugins={[rehypeHighlight]}>
             {post.content}

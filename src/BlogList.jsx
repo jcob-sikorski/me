@@ -1,4 +1,3 @@
-// src/BlogList.jsx
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { blogPosts } from "./blogData";
@@ -6,7 +5,8 @@ import { blogPosts } from "./blogData";
 export default function BlogList() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <div className="max-w-3xl mx-auto px-8 py-16">
+      {/* Updated: Margin instead of Padding/Width */}
+      <div className="mx-6 md:mx-20 py-16">
         
         {/* Nav */}
         <div className="mb-12">
