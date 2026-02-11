@@ -24,7 +24,7 @@ export default function BlogPost() {
          2. Added 'mx-6' (small margin on mobile).
          3. Added 'md:mx-20' (larger margin on desktop) so it's not glued to the edge.
       */}
-      <div className="mx-6 md:mx-20 py-16">
+      <div className="mx-4 md:mx-20 py-8 md:py-16">
         
         {/* Navigation */}
         <div className="mb-12">

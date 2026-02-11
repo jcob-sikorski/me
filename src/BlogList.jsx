@@ -6,7 +6,7 @@ export default function BlogList() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Updated: Margin instead of Padding/Width */}
-      <div className="mx-6 md:mx-20 py-16">
+      <div className="mx-4 md:mx-20 py-8 md:py-16">
         
         {/* Nav */}
         <div className="mb-12">
