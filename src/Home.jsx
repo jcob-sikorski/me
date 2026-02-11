@@ -92,18 +92,18 @@ const projects = [
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <div className="max-w-4xl mx-auto px-8 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 py-16">
         
         {/* Header */}
         <header className="mb-20">
-          <h1 className="text-5xl font-light mb-4 text-black">
+          <h1 className="text-4xl sm:text-5xl font-light mb-4 text-black">
             Jakub Siekiera
           </h1>
           <p className="text-xl text-gray-600 mb-12 font-light leading-relaxed">
             Java Spring Boot SWE | Cloud, AI, Automation | Consulting
           </p>
           
-          <div className="flex gap-8">
+          <div className="flex flex-wrap gap-4 sm:gap-8">
             <a
               href="mailto:jm.siekiera@gmail.com"
               className="flex items-center gap-2 text-gray-700 font-medium"
@@ -159,7 +159,7 @@ export default function App() {
           
           <div className="space-y-16">
             {projects.map((project, idx) => (
-              <article key={idx} className="border-l-2 border-gray-200 pl-8">
+              <article key={idx} className="border-l-2 border-gray-200 pl-4 sm:pl-8">
                 <div className="mb-4">
                   <h3 className="text-2xl font-medium text-black mb-1">
                     {project.title}
